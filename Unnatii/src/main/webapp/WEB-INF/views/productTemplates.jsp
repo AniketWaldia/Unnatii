@@ -43,7 +43,7 @@
 		<article><ul>		
 			<c:forEach items="${SingleSided}" var="template">			
 			<li><a href="${pageContext.servletContext.contextPath}/productTemplates/${productId}/${template.id}">
-				<img alt="" title="" src="${pageContext.servletContext.contextPath}/resources/uploadProduct/templateImage/${template.image}" height="180px"/></a>
+				<img alt="" title="" src="${pageContext.servletContext.contextPath}/resources/uploadProduct/templateImage/${template.image}"  height="180px"/></a>
 				
 			</li>
 			</c:forEach>		
