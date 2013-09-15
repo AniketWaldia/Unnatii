@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+ 
+<hibernate-configuration>
+    <session-factory>
+        <mapping class="com.unnatii.in.model.Contact" />
+        <mapping class="com.unnatii.in.model.ReplyContact" />
+		<mapping class="com.unnatii.in.model.SpecSheet" />
+		<mapping class="com.unnatii.in.model.ReplyQuote" />
+		<mapping class="com.unnatii.in.model.Product" />
+		<mapping class="com.unnatii.in.model.ProductCategory" />
+		<mapping class="com.unnatii.in.model.Template" />
+        
+    </session-factory>
+	    
+</hibernate-configuration>
