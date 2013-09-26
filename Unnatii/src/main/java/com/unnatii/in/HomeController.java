@@ -41,7 +41,8 @@ public class HomeController {
 	public String root(Locale locale, Model model,Map<String, Object> map) {
 		logger.info("home page loading start");
 		logger.info("Welcome home! The client locale is {}.", locale);
-		
+		//String myName = PropertiesLoader.getPropertyValue("myName");
+		//logger.info(myName);
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
 		

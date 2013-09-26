@@ -313,8 +313,8 @@ input[type="password"],input[type="text"]{width:262px;font-family:din-med;font-s
 	position: fixed;
 	z-index: 100;
 	top: 180px;
-	right: 0px;
-	width:30px;
+	right: 0;
+	width:50px;
 	height:300px;
 }
 .main_menu
@@ -397,7 +397,8 @@ input[type="password"],input[type="text"]{width:262px;font-family:din-med;font-s
     position:relative;
     width:100%;
     height:100%;
-    overflow:hidden;
+	margin: 10px 0 0;
+    /*overflow:hidden;*/
 
 }
 
@@ -528,7 +529,6 @@ background-color:#E9E6F1;
     height:auto;
     float:right;
 
-
 }
 
 
@@ -613,7 +613,7 @@ background-color:#E9E6F1;
 .middlePanelHome section article ul li{
    
     display: inline-block;
-    margin-left: 15px;
+   /*  margin-left: 15px; */
     max-width: 200px;
     width: 30%;
     
@@ -801,9 +801,9 @@ background-color:#E9E6F1;
 
 .middlePanelHome section article ul li {
     display: inline-block;
-    margin-left: 12px;
+    margin-right: 0px;
     max-width: 190px;
-    width: 30%;
+    width: 200px;
 }	
 .middlePanelHome section article ul{
     width:100%;
@@ -953,6 +953,303 @@ background-color:#E9E6F1;
 }	
 	
 }
+.pSlider {
+    padding-left:20px;
+}
+.pSlider .jcarousel-container-horizontal {
+    position: static !important;
+    width: 570px;
+}
+.pSlider .jcarousel-clip-horizontal {
+    height: auto;
+    margin: 0 auto;
+    position: static !important;
+    width: 570px;
+}
+.pSlider .jcarousel-prev-horizontal {
+    background: url("../images/prev.png") no-repeat scroll -4px 0 transparent;
+    cursor: pointer;
+    height: 16px;
+    left: 2px;
+    position: absolute;
+    top: 90px;
+    width: 16px;
+}
+.pSlider .jcarousel-next-horizontal {
+    background: url("../images/next.png") no-repeat scroll -4px 0 transparent;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    right: 2px;
+    top: 90px;
+    width: 16px;
+}
+.pSlider .jcarousel-prev-disabled-horizontal, .colRight .jcarousel-next-disabled-horizontal {
+    background-position: -64px 0;
+    cursor: default;
+}
+.pSlider .jcarousel-clip {
+    overflow: hidden;
+}
+.leftContainer{
+	
+	width: 20%;
+	height: auto;
+	position:relative;
+	float:left;
+	display:block;	
+	
+}
 
+.leftContainer section{
+	padding:5px 10px;
+	text-align:left;
+	color:#ffffff;
+	font-weight:bold;
+	background:#180533;
+	
+}
 
+.leftContainer ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	
+}
+.leftContainer ul li {
+	padding:5px 10px;
+	text-align:left;
+	color:#180533;
+	font-size:12px;
+	line-height:2em;
+	font-weight:bold;
+	cursor:pointer;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #dfdaea 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#dfdaea)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#dfdaea 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#dfdaea 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#dfdaea 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#dfdaea 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dfdaea',GradientType=0 ); /* IE6-9 */
 
+}
+.leftContainer ul li:after {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 5px solid transparent;
+	border-left-color: #333;
+	left:90%;
+	margin-top:-16px;
+	display:none;
+	
+}
+.leftContainer ul li ul{
+
+	display:none;
+	position:absolute;
+	margin:-16% 0 0 94%;
+	width:100%;
+	z-index:100;
+	clear:both;
+	
+}
+.leftContainer ul li:hover ul{
+
+	display:block;
+	
+}
+.leftContainer ul li:hover::after{
+
+	display:block;
+	
+}
+.rightContainer{
+	position:relative;
+	float:left;
+	width:75%;
+	height:auto;
+	overflow:hidden;
+	display:block;	
+	padding-left:5%;
+	
+}
+.rightContainer>header{
+	font-size:16px;	
+	font-weight:bold;
+	margin-bottom:2%;
+}
+.productList1, .productList2, .productList3{
+	position:relative;
+	width:100%;
+	height:auto;
+	overflow:hidden;	
+	margin:0 0 10px 0;
+	
+}
+.productList1>header, .productList2>header, .productList3>header{
+	font-size:14px;		
+	margin-bottom:1%;
+	
+}
+
+.productDetail{
+	position:relative;	
+	float:left;
+	width:30%;
+	height:auto;
+	overflow:hidden;
+	
+}
+.productDetail p{
+	padding:2px 0 0 0;
+	margin:2px 0 0 0;
+	font-size:10px;
+	cursor:pointer;
+	
+}
+.productDetail img{
+	
+	cursor:pointer;
+	
+}
+.productSpecLeft{
+	position:relative;	
+	float:left;
+	width:30%;
+	height:auto;
+	overflow:hidden;
+	
+}
+
+.productSpecRight{
+	position:relative;	
+	float:left;
+	width:70%;
+	height:auto;
+	overflow:hidden;
+	
+}
+.productSpecRight header{
+	font-size:14px;
+	font-weight:bold;	
+}
+.productSpecRight p{
+	padding-left:0;
+	padding-bottom:0px;
+	padding-top:5px;
+	margin:0;
+	font-size:12px;
+	
+}
+.productSpecBottom{
+	position:relative;
+	height:auto;
+	width:100%;
+	overflow:hidden;
+	padding-left:0;
+	padding-bottom:0px;
+	padding-top:5%;
+	margin:0;
+	font-size:12px;
+	
+}
+ .productSpecRight p label{
+	
+	font-size:14px;
+	
+}
+.productSpecDetail{
+	margin-top:40px;
+}
+.pSpecifications, .specTableHolder {
+	position:relative;
+	height:auto;
+	width:100%;
+	overflow:hidden;
+	
+
+}
+.specTableHolder {padding-top:5%;}
+.pSpecifications .leftSpec{
+	position:relative;
+	float:left;	
+	width:30%;
+	padding:0;
+	margin:0;
+	padding-top:2%;
+	font-size:12px;
+	font-weight:bold;
+}
+.pSpecifications .rightSpec{
+	position:relative;
+	float:left;	
+	width:70%;
+	padding:0;
+	margin:0;
+	padding-top:2%;
+	font-size:12px;
+}
+.pSpecifications .rightSpec .rightSpecSpan{
+	padding-left:10%;
+}
+.specTableHolder .firstCol{
+	position:relative;
+	float:left;
+	width:12%;
+	padding:3px 0 0 1%;
+	border-top:1px solid #fff;
+	border-right:1px solid #fff;
+}
+.specTableHolder .secCol{
+	position:relative;
+	float:left;
+	width:44%;
+	padding:0;
+	padding:3px 0 0 1%;
+	border-top:1px solid #fff;
+	border-right:1px solid #fff;
+}
+
+.specTableHolder .thirdtCol{
+	position:relative;
+	float:left;
+	width:40%;
+	padding:0;
+	padding:3px 0 0 1%;
+	border-top:1px solid #fff;
+}
+.rowHeader{
+	background-color:#ccc;
+	height:25px;
+	width: 99.5%;
+	margin-top:2%;
+	
+}
+.rowHeader p.firstCol, .rowHeader p.secCol, .rowHeader p.thirdtCol{
+	border:none;
+	
+}
+
+.pImageClass{
+	margin:0;
+	padding:0;	
+	height:250px;
+}
+.buttonClass{
+	font-size:12px;
+	background:#180533;
+	text-align:center;
+	padding:6px;
+	width:50%;
+	color:#ffffff;
+	font-weight:bold;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+}
+.buttonClassLong{
+	width:80%;	
+}
